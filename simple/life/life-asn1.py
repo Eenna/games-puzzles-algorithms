@@ -12,8 +12,11 @@
 * Delete the names and ccids below, and put
 # the names and ccids of all members of your group, including you. 
 # name                         ccid
-Daniel Levy                   danlevy
-Sarah Levy                    sarlevy
+cole stevenson               crsteven
+Duncan Krammer               krammer
+Shridhar Patel               spatel1
+Colman Koivisto              koivisto
+Khrystina Vrublevska         vrublevs
 
 #############################################
 # Your answer to question 1-a:
