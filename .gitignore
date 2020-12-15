@@ -77,3 +77,4 @@ bower_components
 
 # Web dependencies
 web/hex/static/deps
+.vscode
