@@ -37,7 +37,7 @@ class Maze:
         print(x,' ',end='') # add spaces for readability
       print('')
     print('') 
-    sleep(.3)
+    sleep(.1)
 
   def find_start(self):
     for r in range(self.rows):
@@ -58,12 +58,12 @@ class Maze:
     fringe.append(psn)
     while len(fringe) > 0:
       # comment out one of these two lines
-      #psn = fringe.pop() # pop from end of list, LIFO, stack, so DFS
-      psn = fringe.popleft() # pop from front, FIFO, queue, so BFS
+      psn = fringe.pop() # pop from end of list, LIFO, stack, so DFS
+      # psn = fringe.popleft() # pop from front, FIFO, queue, so BFS
       if self.char_at(psn)!=orgn_ch:
         self.mark_location(psn,done_ch)
         self.showpretty()
-      shuffle(nbr_offsets) # just for fun
+      # shuffle(nbr_offsets) # just for fun
       for shift in nbr_offsets: # do you see how this works ?
         new_psn = psn[0]+shift[0], psn[1]+shift[1]
         new_ch = self.char_at(new_psn)
